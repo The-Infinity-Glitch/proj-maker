@@ -1,0 +1,3 @@
+/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles/proj-manager.dir
+/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles/edit_cache.dir
+/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles/rebuild_cache.dir
