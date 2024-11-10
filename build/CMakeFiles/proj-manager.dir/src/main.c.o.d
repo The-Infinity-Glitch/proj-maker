@@ -2,7 +2,9 @@ CMakeFiles/proj-manager.dir/src/main.c.o: \
  /home/themaster/Documentos/coding/c/proj-maker/src/main.c \
  /usr/include/stdc-predef.h \
  /home/themaster/Documentos/coding/c/proj-maker/src/file_manager.h \
- /usr/include/linux/limits.h /usr/include/stdio.h \
+ /usr/include/linux/limits.h \
+ /home/themaster/Documentos/coding/c/proj-maker/src/../include/cJSON/cJSON.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -11,7 +13,6 @@ CMakeFiles/proj-manager.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -34,4 +35,5 @@ CMakeFiles/proj-manager.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.h

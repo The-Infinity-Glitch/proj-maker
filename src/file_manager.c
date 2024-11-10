@@ -5,6 +5,20 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include "../include/cJSON/cJSON.h"
+
+/* Check if a file exists */
+int file_exists(char *filename) {
+    FILE *file = fopen(filename, "r");
+    int exist = 1;
+
+    if (file != NULL) {
+        exist = 0;
+        fclose(file);
+    }
+
+    return exist;
+}
 
 /* Create a new directory */
 void make_dir(char path[PATH_MAX], char name[]) {
@@ -28,14 +42,49 @@ void make_file(char path[PATH_MAX], char name[]) {
 
     FILE *file_ptr;
 
-    // Create a file
+    /* Create a file */
     file_ptr = fopen(strdup(name), "w");
 
-    // Close the file
+    /* Close the file */
     fclose(file_ptr);
 
     printf("New file: %s\n", new_file);
 
     /* Free the alocated memory of new_file */
     free(new_file);
+}
+
+/* Read a json file and return a cJSON object */
+cJSON *load_json_file(char *name) {
+    /* Open the file */
+    FILE *file = fopen(name, "r");
+
+    if (file == NULL) {
+        perror("Error");
+        exit(1);
+    }
+
+    /* Read the file contents into a string */
+    char buffer[1024];
+    int len = fread(buffer, 1, sizeof(buffer), file);
+
+    /* Close the file */
+    fclose(file);
+
+    /* Parse the JSON data */
+    cJSON *json = cJSON_Parse(buffer);
+
+    if (json == NULL) {
+        const char *error_ptr = cJSON_GetErrorPtr();
+
+        if (error_ptr != NULL) {
+            printf("Error: %s\n", error_ptr);
+        }
+
+        cJSON_Delete(json);
+
+        exit(1);
+    }
+
+    return json;
 }

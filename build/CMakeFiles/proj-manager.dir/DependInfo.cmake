@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/themaster/Documentos/coding/c/proj-maker/include/cJSON/cJSON.c" "CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o" "gcc" "CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o.d"
   "/home/themaster/Documentos/coding/c/proj-maker/src/file_manager.c" "CMakeFiles/proj-manager.dir/src/file_manager.c.o" "gcc" "CMakeFiles/proj-manager.dir/src/file_manager.c.o.d"
+  "/home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.c" "CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o" "gcc" "CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o.d"
   "/home/themaster/Documentos/coding/c/proj-maker/src/main.c" "CMakeFiles/proj-manager.dir/src/main.c.o" "gcc" "CMakeFiles/proj-manager.dir/src/main.c.o.d"
   )
 

@@ -129,6 +129,30 @@ proj-manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/build
 .PHONY : proj-manager/fast
 
+include/cJSON/cJSON.o: include/cJSON/cJSON.c.o
+.PHONY : include/cJSON/cJSON.o
+
+# target to build an object file
+include/cJSON/cJSON.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o
+.PHONY : include/cJSON/cJSON.c.o
+
+include/cJSON/cJSON.i: include/cJSON/cJSON.c.i
+.PHONY : include/cJSON/cJSON.i
+
+# target to preprocess a source file
+include/cJSON/cJSON.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.i
+.PHONY : include/cJSON/cJSON.c.i
+
+include/cJSON/cJSON.s: include/cJSON/cJSON.c.s
+.PHONY : include/cJSON/cJSON.s
+
+# target to generate assembly for a file
+include/cJSON/cJSON.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.s
+.PHONY : include/cJSON/cJSON.c.s
+
 src/file_manager.o: src/file_manager.c.o
 .PHONY : src/file_manager.o
 
@@ -152,6 +176,30 @@ src/file_manager.s: src/file_manager.c.s
 src/file_manager.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/src/file_manager.c.s
 .PHONY : src/file_manager.c.s
+
+src/gui_editor/main.o: src/gui_editor/main.c.o
+.PHONY : src/gui_editor/main.o
+
+# target to build an object file
+src/gui_editor/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o
+.PHONY : src/gui_editor/main.c.o
+
+src/gui_editor/main.i: src/gui_editor/main.c.i
+.PHONY : src/gui_editor/main.i
+
+# target to preprocess a source file
+src/gui_editor/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/src/gui_editor/main.c.i
+.PHONY : src/gui_editor/main.c.i
+
+src/gui_editor/main.s: src/gui_editor/main.c.s
+.PHONY : src/gui_editor/main.s
+
+# target to generate assembly for a file
+src/gui_editor/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/src/gui_editor/main.c.s
+.PHONY : src/gui_editor/main.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... proj-manager"
+	@echo "... include/cJSON/cJSON.o"
+	@echo "... include/cJSON/cJSON.i"
+	@echo "... include/cJSON/cJSON.s"
 	@echo "... src/file_manager.o"
 	@echo "... src/file_manager.i"
 	@echo "... src/file_manager.s"
+	@echo "... src/gui_editor/main.o"
+	@echo "... src/gui_editor/main.i"
+	@echo "... src/gui_editor/main.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

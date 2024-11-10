@@ -81,12 +81,12 @@ clean: CMakeFiles/proj-manager.dir/clean
 CMakeFiles/proj-manager.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj-manager.dir/build.make CMakeFiles/proj-manager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=1,2,3 "Built target proj-manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target proj-manager"
 .PHONY : CMakeFiles/proj-manager.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/proj-manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/proj-manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles 0
 .PHONY : CMakeFiles/proj-manager.dir/rule

@@ -83,10 +83,38 @@ CMakeFiles/proj-manager.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/proj-manager.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/themaster/Documentos/coding/c/proj-maker/src/main.c -o CMakeFiles/proj-manager.dir/src/main.c.s
 
+CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o: CMakeFiles/proj-manager.dir/flags.make
+CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o: /home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.c
+CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o: CMakeFiles/proj-manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o -MF CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o.d -o CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o -c /home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.c
+
+CMakeFiles/proj-manager.dir/src/gui_editor/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/proj-manager.dir/src/gui_editor/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.c > CMakeFiles/proj-manager.dir/src/gui_editor/main.c.i
+
+CMakeFiles/proj-manager.dir/src/gui_editor/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/proj-manager.dir/src/gui_editor/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/themaster/Documentos/coding/c/proj-maker/src/gui_editor/main.c -o CMakeFiles/proj-manager.dir/src/gui_editor/main.c.s
+
+CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o: CMakeFiles/proj-manager.dir/flags.make
+CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o: /home/themaster/Documentos/coding/c/proj-maker/include/cJSON/cJSON.c
+CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o: CMakeFiles/proj-manager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o -MF CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o.d -o CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o -c /home/themaster/Documentos/coding/c/proj-maker/include/cJSON/cJSON.c
+
+CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/themaster/Documentos/coding/c/proj-maker/include/cJSON/cJSON.c > CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.i
+
+CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/themaster/Documentos/coding/c/proj-maker/include/cJSON/cJSON.c -o CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.s
+
 CMakeFiles/proj-manager.dir/src/file_manager.c.o: CMakeFiles/proj-manager.dir/flags.make
 CMakeFiles/proj-manager.dir/src/file_manager.c.o: /home/themaster/Documentos/coding/c/proj-maker/src/file_manager.c
 CMakeFiles/proj-manager.dir/src/file_manager.c.o: CMakeFiles/proj-manager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/proj-manager.dir/src/file_manager.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/proj-manager.dir/src/file_manager.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/proj-manager.dir/src/file_manager.c.o -MF CMakeFiles/proj-manager.dir/src/file_manager.c.o.d -o CMakeFiles/proj-manager.dir/src/file_manager.c.o -c /home/themaster/Documentos/coding/c/proj-maker/src/file_manager.c
 
 CMakeFiles/proj-manager.dir/src/file_manager.c.i: cmake_force
@@ -100,16 +128,20 @@ CMakeFiles/proj-manager.dir/src/file_manager.c.s: cmake_force
 # Object files for target proj-manager
 proj__manager_OBJECTS = \
 "CMakeFiles/proj-manager.dir/src/main.c.o" \
+"CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o" \
+"CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o" \
 "CMakeFiles/proj-manager.dir/src/file_manager.c.o"
 
 # External object files for target proj-manager
 proj__manager_EXTERNAL_OBJECTS =
 
 proj-manager: CMakeFiles/proj-manager.dir/src/main.c.o
+proj-manager: CMakeFiles/proj-manager.dir/src/gui_editor/main.c.o
+proj-manager: CMakeFiles/proj-manager.dir/include/cJSON/cJSON.c.o
 proj-manager: CMakeFiles/proj-manager.dir/src/file_manager.c.o
 proj-manager: CMakeFiles/proj-manager.dir/build.make
 proj-manager: CMakeFiles/proj-manager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable proj-manager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/themaster/Documentos/coding/c/proj-maker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable proj-manager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/proj-manager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
