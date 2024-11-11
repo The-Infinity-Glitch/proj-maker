@@ -54,13 +54,43 @@ void make_file(char path[PATH_MAX], char name[]) {
     free(new_file);
 }
 
+char *read_file(char *name) {
+    FILE *file;
+
+    /* Open a file in read mode */
+    file = fopen(name, "r");
+
+    /* Read the file contents into a string */
+    char buffer[1024];
+    int len = fread(buffer, 1, sizeof(buffer), file);
+
+    /* Close the file */
+    fclose(file);
+
+    char *content = buffer;
+    return content;
+}
+
+void write_to_file(char *file_name, char *content) {
+    FILE *file;
+
+    // Open a file in writing mode
+    file = fopen(file_name, "w");
+
+    // Write some text to the file
+    fprintf(file, "%s", content);
+
+    // Close the file
+    fclose(file);
+}
+
 /* Read a json file and return a cJSON object */
 cJSON *load_json_file(char *name) {
     /* Open the file */
     FILE *file = fopen(name, "r");
 
     if (file == NULL) {
-        perror("Error");
+        perror("Error: No such file");
         exit(1);
     }
 

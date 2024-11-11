@@ -8,4 +8,8 @@ void make_dir(char path[PATH_MAX], char name[]);
 
 void make_file(char path[PATH_MAX], char name[]);
 
+char *read_file(char *name);
+
+void write_to_file(char *file_name, char *content);
+
 cJSON *load_json_file(char *name);
