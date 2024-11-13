@@ -71,17 +71,43 @@ char *read_file(char *name) {
     return content;
 }
 
-void write_to_file(char *file_name, char *content) {
+void write_to_file(char *file_name, char content[]) {
     FILE *file;
 
-    // Open a file in writing mode
+    /* Open a file in writing mode */
     file = fopen(file_name, "w");
 
-    // Write some text to the file
-    fprintf(file, "%s", content);
+    if (file == NULL) {
+        printf("Error: No such file");
+        return;
+    }
 
-    // Close the file
+    /* Write some text to the file */
+    fputs(content, file);
+
+    /* Close the file */
     fclose(file);
+}
+
+void create_project_file(char path[PATH_MAX], char name[], char project_template[]) {
+    char *new_project_file = strcat(strdup(name), "/project.json");
+    make_file(path, new_project_file);
+
+    /* Create a cJSON object */
+    cJSON *json = cJSON_CreateObject();
+    cJSON_AddObjectToObject(json, "settings");
+    cJSON_AddStringToObject(json->child, "cmake version", "3.28.3");
+    cJSON_AddObjectToObject(json, "project");
+    cJSON_AddStringToObject(json->child->next, "name", name);
+    cJSON_AddArrayToObject(json->child->next, "source files");
+
+    /* Convert cJSON object into a string */
+    char *json_str = cJSON_Print(json);
+
+    write_to_file(new_project_file, json_str);
+
+    cJSON_free(json_str);
+    cJSON_Delete(json);
 }
 
 /* Read a json file and return a cJSON object */
