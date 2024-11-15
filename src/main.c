@@ -1,6 +1,7 @@
 #include "file_manager.h"
 #include <linux/limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include "gui_editor/main.h"

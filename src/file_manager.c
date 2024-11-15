@@ -54,23 +54,36 @@ void make_file(char path[PATH_MAX], char name[]) {
     free(new_file);
 }
 
+/* Read and return the content of a file */
 char *read_file(char *name) {
-    FILE *file;
+    /* Open the file in read mode */
+    FILE *file = fopen(name, "r");
+    char *buffer = 0;
 
-    /* Open a file in read mode */
-    file = fopen(name, "r");
+    if (file != NULL) {
+        /* Get the size of the content of the file -> Go to the end and get the position (size), after return to the start */
+        fseek(file, 0, SEEK_END);
+        long length = ftell(file);
+        fseek(file, 0, SEEK_SET);
 
-    /* Read the file contents into a string */
-    char buffer[1024];
-    int len = fread(buffer, 1, sizeof(buffer), file);
+        /* Set the buffer size with the size of the content file */
+        buffer = malloc(length);
 
-    /* Close the file */
+        /* Read the content and stores into buffer */
+        if (buffer) {
+            fread(buffer, 1, length, file);
+        }
+    } else {
+        perror("Error");
+        exit(1);
+    }
+
     fclose(file);
 
-    char *content = buffer;
-    return content;
+    return buffer;
 }
 
+/* Write to a file */
 void write_to_file(char *file_name, char content[]) {
     FILE *file;
 
@@ -89,6 +102,7 @@ void write_to_file(char *file_name, char content[]) {
     fclose(file);
 }
 
+/* Create a new project file -> json */
 void create_project_file(char path[PATH_MAX], char name[], char project_template[]) {
     char *new_project_file = strcat(strdup(name), "/project.json");
     make_file(path, new_project_file);
@@ -106,6 +120,7 @@ void create_project_file(char path[PATH_MAX], char name[], char project_template
 
     write_to_file(new_project_file, json_str);
 
+    free(new_project_file);
     cJSON_free(json_str);
     cJSON_Delete(json);
 }

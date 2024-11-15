@@ -3,7 +3,7 @@
 #include "raylib.h"
 
 #define RAYGUI_IMPLEMENTATION
-#include "raygui.h"
+#include "../../include/raygui/src/raygui.h"
 
 int editor_main(char current_path[PATH_MAX]) {
     /* Check if the current directory has a proj-maker project */
