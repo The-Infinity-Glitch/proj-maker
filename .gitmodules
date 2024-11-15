@@ -1,3 +1,7 @@
+[submodule "include/cJSON"]
+    path = include/cJSON
+    url = https://github.com/DaveGamble/cJSON.git
+
 [submodule "include/raygui"]
 	path = include/raygui
 	url = https://github.com/raysan5/raygui.git
